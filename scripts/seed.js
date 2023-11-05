@@ -127,6 +127,7 @@ async function seedCustomers() {
 
 async function seedRevenue() {
   try {
+    // await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
     // Create the "revenue" table if it doesn't exist
     const createTable = await sql`
       CREATE TABLE IF NOT EXISTS revenue (
